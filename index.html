@@ -30,7 +30,7 @@
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
         <li><button id="TestButton" type="button">TestEvent</button></li>
-        <li><button id="TestButton" type="button">unverifiedApp</button></li>
+        <li><button id="UnVerifiedAppButton" type="button">UnVerifiedApp</button></li>
    
     </ul>
     </div>
@@ -56,8 +56,8 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
 }, false);
 
 
-document.getElementById('unverifiedApp').addEventListener('click', function() {
-  cbq('track', 'unverifiedAppEvent', {
+document.getElementById('UnVerifiedAppButton').addEventListener('click', function() {
+  cbq('track', 'UnVerifiedApp', {
     value: 100,
     currency: 'USD',
     id:'ssn'  
