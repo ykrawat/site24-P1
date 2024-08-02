@@ -28,6 +28,7 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
+        <li><button id="TestButton" type="button">TestEvent</button></li>
     </ul>
     </div>
 
@@ -50,6 +51,15 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     currency: 'USD',
   });
 }, false);
+
+
+document.getElementById('TestButton').addEventListener('click', function() {
+  cbq('track', 'TestEvent', {
+    value: 100,
+    currency: 'USD',
+  });
+}, false);
+
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
   cbq('track', 'Subscribe');
